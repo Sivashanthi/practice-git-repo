@@ -7,13 +7,19 @@ empid	empname	empsal	empdob	emploc
 
 
 b. display all employees whose name starts with "T"
-
-
+query:SELECT * FROM employee WHERE empname LIKE 'T%';
+output:
+empid	empname	empsal	empdob	emploc
+128	tanya	7810.8	-1983	Hyderabad
 
 c. display all  departments ,whose location is "Chennai"
-
-
+query:SELECT * FROM employee WHERE NOT emploc = 'Hyderabad' AND NOT emploc = 'Chennai';
+output:
+empid	empname	empsal	empdob	emploc
+123	bhavani	12000.9	-2005	Noida
+125	kavya	80000	-2011	Coimbatore
 d. filter the department whose department loc in "Chennai","hyderabad"
-
-
+query:SELECT * FROM department WHERE deptloc = 'Chennai';
 e. filter the employees whose emploc not in "Chennai","hyderabad"
+query:SELECT * FROM department WHERE deptloc = 'Chennai' OR deptloc = 'Hyderabad';
+

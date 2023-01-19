@@ -1,0 +1,24 @@
+DEPARTMENT:
+create table department(deptid,deptname,deptloc);
+
+
+
+CREATE TABLE department (
+  depid INTEGER PRIMARY KEY,
+  depname TEXT NOT NULL,
+  deploc TEXT NOT NULL
+);
+
+ 
+
+INSERT INTO department VALUES (0001, 'sales', 'Hyderabad');
+INSERT INTO department VALUES (0002, 'Banking', 'Bangalore');
+INSERT INTO department VALUES (0003, 'HR', 'Pune');
+
+
+
+output:
+depid	depname	deploc
+1	sales	      Hyderabad
+2	Banking	Bangalore
+3	HR	      Pune

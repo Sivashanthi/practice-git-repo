@@ -1,0 +1,19 @@
+a. display all employees whose salary is in the range of 20000 and 45000
+query:-SELECT * FROM employee WHERE empsal BETWEEN 20000 AND 45000;
+output:
+empid	empname	empsal	empdob	emploc
+122	santhi	23452.8	-1976	   Hyderabad
+126	sravani	34000.5	-2002	   Chennai
+
+
+b. display all employees whose name starts with "T"
+
+
+
+c. display all  departments ,whose location is "Chennai"
+
+
+d. filter the department whose department loc in "Chennai","hyderabad"
+
+
+e. filter the employees whose emploc not in "Chennai","hyderabad"
